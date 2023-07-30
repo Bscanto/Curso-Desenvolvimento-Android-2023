@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:background="#ED0606"
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,12 +81,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="76dp"
         android:text="@string/txt_button_limpar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.536" />
 
     <Button
         android:id="@+id/btnSalvar"
@@ -108,9 +108,9 @@
         android:text="@string/txt_button_finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.386" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
