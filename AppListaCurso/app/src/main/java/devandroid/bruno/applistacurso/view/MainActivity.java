@@ -10,6 +10,8 @@ import devandroid.bruno.applistacurso.model.Pessoa;
 public class MainActivity extends AppCompatActivity {
 
     Pessoa pessoa;
+    Pessoa outraPessoa;
+
 
 
     @Override
@@ -18,5 +20,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
+
+        // Atriduir conteúdo, dados, valores para o objeto
+        pessoa.setPrimeiroNome("Bruno");
+        pessoa.setSobreNome("Canto");
+        pessoa.setCursoDesejado("Android");
+        pessoa.setTelefoneContato("55-999999999");
+
+
+        outraPessoa = new Pessoa();
+        outraPessoa.setPrimeiroNome("Luiz");
+        outraPessoa.setSobreNome("Silva");
+        outraPessoa.setCursoDesejado("Java");
+        outraPessoa.setTelefoneContato("55-999999991");
+
+
+        int parada = 0;
+
     }
 }
