@@ -3,6 +3,7 @@ package devandroid.bruno.applistacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.bruno.applistacurso.R;
 import devandroid.bruno.applistacurso.model.Pessoa;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setTelefoneContato("55-999999991");
 
 
+/*
         dadosPessoa = " Primeiro Nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa += " Sobrenome: ";
@@ -54,10 +56,13 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone Contato: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
+*/
 
 
+        Log.i("POOAndroid", pessoa.toString());
+        Log.i("POOAndroid", outraPessoa.toString());
 
-        int parada = 0;
+
 
 
     }
