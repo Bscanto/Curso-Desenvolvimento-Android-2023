@@ -9,10 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import devandroid.bruno.applistacurso.Controller.PessoaController;
 import devandroid.bruno.applistacurso.R;
 import devandroid.bruno.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
+
+    PessoaController controller;
+
+
 
     Pessoa pessoa;
     Pessoa outraPessoa;
@@ -31,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new PessoaController();
+        controller.toString();
+
+
 
         pessoa = new Pessoa();
 
@@ -81,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
 
                 Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
+
+                controller.salvar(pessoa);
 
             }
         });
