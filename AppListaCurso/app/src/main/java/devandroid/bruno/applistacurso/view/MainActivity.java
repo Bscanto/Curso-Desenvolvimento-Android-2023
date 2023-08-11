@@ -81,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 listaVip.clear();
                 listaVip.apply();
 
-
-
             }
         });
 
